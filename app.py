@@ -1,3 +1,4 @@
+
 import re
 
 def validasi_pendaftaran(nama, email, password):
@@ -20,7 +21,7 @@ def validasi_pendaftaran(nama, email, password):
 
     return True, "Input valid"
 
-# Contoh penggunaan dan pengujian 
+# penggunaan dan pengujian 
 
 data_uji = [
     {"nama": "", "email": "johndoe.com", "password": "pass123", "hasil_diharapkan": "Nama wajib diisi"},
@@ -41,7 +42,7 @@ for i, data in enumerate(data_uji):
 
 # Kasus uji dengan nama dan password yang salah
 # Nama tidak sesuai kriteria
-result, message = validasi_pendaftaran("Risal", "email_risal@example.com", "Rahasiaa1.")
+result, message = validasi_pendaftaran("Risal", "email_risal@gmai.com", "Rahasiaa1.")
 if result:
     print("Registrasi berhasil!")
 else:
